@@ -1,0 +1,58 @@
+/* bai 10 dem cac phan tu chan le */
+
+//#include<stdio.h>
+//void chan(int a[], int n){
+//	for(int i=0;i<n;i++){
+//		if(a[i]%2==0) printf("%d ", a[i]);
+//	}
+//}
+//void le(int a[], int n){
+//	for(int i=0;i<n;i++){
+//		if(a[i]%2!=0) printf("%d ", a[i]);
+//	}
+//}
+//int main(){
+//	int n;
+//	scanf("%d", &n);
+//	int a[n];
+//	int c1=0,c2=0;
+//	for(int i=0;i<n;i++){
+//		scanf("%d", &a[i]);
+//		if(a[i]%2==0){
+//			c1++;
+//		}
+//		else if(a[i]%2!=0){
+//			c2++;
+//		}
+//	}
+//	printf("%d ", c1);
+//	chan(a,n);
+//	printf("\n%d ", c2);
+//	le(a,n);
+//	
+//}
+
+#include<stdio.h>
+int main(){
+	int n;
+	scanf("%d", &n);
+	int a[n];
+	int cnt1=0,cnt2=0;
+	for(int i=0;i<n;i++){
+		scanf("%d", &a[i]);
+		if(a[i]%2==0) cnt1++;
+		else cnt2++;
+	}
+	printf("%d ",cnt1);
+	for(int i=0;i<n;i++){
+		if(a[i]%2==0){
+			printf("%d ",a[i]);
+		}
+	}
+	printf("\n%d ",cnt2);
+	for(int i=0;i<n;i++){
+		if(a[i]%2!=0){
+			printf("%d ",a[i]);
+		}
+	}
+}
